@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>픽셀 아트 에디터</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="options">
+        <div class="opt-wrapper">
+          <div class="slider">
+            <label for="width-range">가로 픽셀 수</label>
+            <input type="range" id="width-range" min="1" max="100" />
+            <span id="width-value">00</span>
+          </div>
+          <div class="slider">
+            <label for="height-range">세로 픽셀 수</label>
+            <input type="range" id="height-range" min="1" max="100" />
+            <span id="height-value">00</span>
+          </div>
+          <div class="slider">
+            <label for="brush-size-range">브러쉬 사이즈</label>
+            <input type="range" id="brush-size-range" min="1" max="100" />
+            <span id="brush-size-value">00</span>
+          </div>
+        </div>
+        <div class="opt-wrapper">
+          <button id="submit-grid">그리드 생성하기</button>
+          <button id="clear-grid">그리드 없애기</button>
+          <input type="color" id="color-input" />
+          <button id="erase-btn">지우개</button>
+          <button id="paint-btn">브러쉬</button>
+        </div>
+      </div>
+      <div class="container"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
