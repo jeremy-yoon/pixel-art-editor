@@ -133,6 +133,6 @@ gridHeight.addEventListener("input", () => {
 });
 
 window.onload = () => {
-  gridWidth.value = 0;
-  gridHeight.value = 0;
+  gridWidth.value = 30;
+  gridHeight.value = 30;
 };
